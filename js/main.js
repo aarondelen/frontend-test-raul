@@ -12,29 +12,47 @@ navToggle.addEventListener("click", () => {
   } else {
     navMenu.style.maxHeight = navMenu.scrollHeight + "px";
   }
-})
+});
 
-// carousel
-
-const carousel = document.getElementById("carousel");
+// * -- carousel below --
+ 
+const track = document.getElementById("carouselTrack");
 const cards = document.querySelectorAll(".carousel-card");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 let currentIndex = 0;
+const maxIndex = 1;
+const cardsPerView = 4;
 const totalCards = cards.length;
 
 const updateCarousel = () => {
-  const offset = -currentIndex * 100;
-  carousel.style.transform = `translateX(${offset}%)`;
-}
+  const offset = -(currentIndex * (100 / cardsPerView));
+  track.style.transform = `translateX(${offset}%)`;
+};
+
+const updateButtons = () => {
+  prevBtn.classList.toggle("opacity-30", currentIndex === 0);
+  prevBtn.classList.toggle("pointer-events-none", currentIndex === 0);
+
+  nextBtn.classList.toggle("opacity-30", currentIndex === maxIndex);
+  nextBtn.classList.toggle("pointer-events-none", currentIndex === maxIndex);
+};
 
 nextBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % totalCards;
-  updateCarousel();
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+    updateCarousel();
+    updateButtons();
+  }
 });
 
 prevBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-  updateCarousel();
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+    updateButtons();
+  }
 });
+
+updateButtons();

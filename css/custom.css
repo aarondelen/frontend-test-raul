@@ -11,3 +11,7 @@ html {
 li {
   list-style: none;
 }
+
+#carousel {
+  transition: transform 0.5s ease-in-out;
+}
