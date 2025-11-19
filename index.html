@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/custom.css" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>RAUL - Business</title>
+  <title>RAUL - Enative</title>
 </head>
 
 <body class="overflow-x-hidden bg-[#fff9f7]">
-  <header class="p-5 border-b border-gray-100 relative">
+  <header class="p-5 relative">
     <nav class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition">
         <div class="text-orange-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -22,12 +23,12 @@
         <span class="text-xl font-bold">RAUL</span>
       </div>
 
-      <div class="hidden md:flex gap-16 font-medium text-gray-700">
-        <a href="#" class="text-decoration-none text-orange-500 transition">Home</a>
-        <a href="#" class="text-decoration-none text-black hover:text-orange-500 transition duration-300">About Us</a>
-        <a href="#" class="text-decoration-none text-black hover:text-orange-500 transition duration-300">Services</a>
-        <a href="#" class="text-decoration-none text-black hover:text-orange-500 transition duration-300">Page</a>
-        <a href="#" class="text-decoration-none text-black hover:text-orange-500 transition duration-300">Support</a>
+      <div class="hidden md:flex gap-16 font-medium">
+        <a href="#" class="text-orange-500 transition">Home</a>
+        <a href="#" class="hover:text-orange-500 transition duration-300">About Us</a>
+        <a href="#" class="hover:text-orange-500 transition duration-300">Services</a>
+        <a href="#" class="hover:text-orange-500 transition duration-300">Page</a>
+        <a href="#" class="hover:text-orange-500 transition duration-300">Support</a>
       </div>
 
       <button
@@ -35,12 +36,15 @@
         Started</button>
 
       <button id="navToggle" class="md:hidden cursor-pointer">
-        <img id="iconMenu" src="images/hamburger.svg" class="w-9 h-9" alt="open menu" loading="lazy">
-        <img id="iconClose" src="images/close.svg" class="w-6 h-6 hidden" alt="close menu" loading="lazy">
+        <img id="iconMenu" aria-label="Open Menu" src="images/hamburger.svg" class="w-9 h-9" alt="open menu"
+          loading="lazy">
+        <img id="iconClose" aria-label="Close Menu" src="images/close.svg" class="w-6 h-6 hidden" alt="close menu"
+          loading="lazy">
       </button>
     </nav>
 
-    <div id="navMenu" class="flex flex-col gap-4 mt-4 md:hidden overflow-hidden max-h-0 transition-all duration-300">
+    <div id="navMenu"
+      class="flex flex-col gap-4 font-medium mt-4 md:hidden overflow-hidden max-h-0 transition-all duration-300">
       <a href="#" class="text-orange-500"></a>
       <a href="#" class="hover:text-orange-500 transition duration-300">About Us</a>
       <a href="#" class="hover:text-orange-500 transition duration-300">Services</a>
@@ -53,54 +57,55 @@
   </header>
 
   <main>
-    <section class="py-16 px-6 xl:px-0 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+    <section class="py-16 px-6 xl:px-0 max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-8">
       <div class="lg:w-1/2">
-        <h1 class="text-5xl md:text-[4.5rem] font-semibold leading-tight text-orange-500">
+        <h1 class="text-[3.4rem] md:text-[4.5rem] font-semibold leading-tight text-orange-500">
           Future of your <br><span class="text-black">business today.</span>
         </h1>
 
-        <div class="flex items-center gap-5 mt-[5rem]">
-          <span class="bg-[#c5c4c5] flex shadow-lg rounded-xl justify-center h-[9rem] w-[9rem]"></span>
+        <div class="flex items-center gap-5 mt-[3rem] md:mt-[5rem]">
+          <span
+            class="hidden sm:flex bg-[#c5c4c5] flex shadow-lg rounded-xl justify-center min-h-[9rem] min-w-[9rem]"></span>
           <p class="text-gray-600 ml-5 max-w-[18rem]">Where we elevate your business with innovative strategies and
             expert solutions. As a full-service business agency.</p>
         </div>
 
-        <div class="flex items-center gap-5 mt-[4rem]">
+        <div class="flex items-center gap-5 md:gap-10 mt-[4rem] mb-8">
           <span
-            class="bg-[#fffffe] flex items-center shadow-lg rounded-lg text-orange-500 justify-center h-[3rem] w-[3rem]"><svg
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-6">
+            class="bg-[#fffffe] flex items-center shadow-lg rounded-lg text-orange-500 justify-center p-1 h-[2rem] w-[2rem] md:h-[4rem] md:w-[4rem]"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" class="size-6 sm:size-9 md:size-10 " viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
             </svg>
           </span>
           <div class="">
-            <p class="font-semibold text-black text-2xl">2000+</p>
+            <p class="font-semibold text-black text-[1.6rem]">2000+</p>
             <p class="text-gray-600 text-[14px]">Your protection</p>
           </div>
           <span
-            class="bg-[#fffffe] flex items-center shadow-lg rounded-lg text-orange-500 justify-center h-[3rem] w-[3rem]"><svg
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-6">
+            class="bg-[#fffffe] flex items-center shadow-lg rounded-lg text-orange-500 justify-center p-1 md:h-[4rem] md:w-[4rem]"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" class="size-6 sm:size-9 md:size-10" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
             </svg>
           </span>
           <div class="">
-            <p class="font-semibold text-black text-2xl">7001+</p>
+            <p class="font-semibold text-black text-[1.6rem]">7001+</p>
             <p class="text-gray-600 text-[14px]">Provide tailored</p>
           </div>
         </div>
       </div>
 
-      <div class="lg:1/2 relative ml-[5rem]">
+      <div class="lg:1/2 relative lg:ml-[5rem]">
         <div class="">
           <img src="images/hero-image-3.jpg" class="w-full h-[33rem] object-contain rounded-2xl z-0 pointer-events-none"
             alt="conference meeting" loading="lazy">
         </div>
 
         <div
-          class="absolute bottom-[-4rem] left-[-11rem] p-[3rem] max-w-[23rem] bg-[#fffffe] shadow-sm rounded-xl w-[25rem] z-5">
+          class="absolute bottom-[-6rem] md:bottom-[-5rem] lg:bottom-[-4rem] left-[-0.5rem] sm:left-[-1.5rem] lg:left-[-11rem] p-[1rem] sm:p-[3rem] max-w-[23rem] bg-[#fffffe] shadow-sm rounded-xl w-[15rem] sm:w-[25rem] z-5">
           <div class="flex items-center gap-5 w-full">
             <span class="text-orange-500 font-semibold text-3xl">721+</span>
             <span class="text-orange-500 font-semibold text-3xl">1000+</span>
@@ -113,26 +118,27 @@
       </div>
     </section>
 
-    <section class="py-16 px-6 xl:px-0 max-w-7xl mx-auto">
-      <div class="flex items-center justify-between mb-[4rem]">
+    <section class="py-16 px-6 xl:px-0 max-w-7xl mx-auto mt-15 sm:mt-10 md:mt-0">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-[4rem]">
         <h2 class="text-5xl font-semibold mb-8 leading-tight max-w-[35rem]">Build the future of your business today.
         </h2>
-        <p class="text-gray-600 ml-5 max-w-[25rem]">Where we elevate your business with innovative strategies and expert
+        <p class="text-gray-600 ml-0 md:ml-5 max-w-[25rem]">Where we elevate your business with innovative strategies
+          and expert
           solutions. As a full-service business agency, we specialize in helping companies of all sizes.</p>
       </div>
 
 
       <div class="relative">
-        <button id="prevBtn"
-          class="absolute left-[-3.5rem] top-[9rem] -translate-y-1/2 bg-white p-2 text-orange-500 rounded-full shadow hover:bg-gray-100 transition duration-300 z-10 cursor-pointer">
+        <button id="prevBtn" aria-label="Previous slide"
+          class="absolute left-[-1rem] sm:left-[-1rem] md:left-[-1rem] lg:left-[-3.5rem] top-[9rem] -translate-y-1/2 bg-white p-2 text-orange-500 rounded-full shadow hover:bg-gray-100 transition duration-300 z-10 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
           </svg>
         </button>
 
-        <button id="nextBtn"
-          class="absolute right-[-3.5rem] top-[9rem] -translate-y-1/2 bg-white p-2 text-orange-500 rounded-full shadow hover:bg-gray-100 transition duration-300 z-10 cursor-pointer">
+        <button id="nextBtn" aria-label="Next slide"
+          class="absolute right-[-1rem] sm:right-[-1rem] md:right-[-1rem] lg:right-[-3rem] top-[9rem] -translate-y-1/2 bg-white p-2 text-orange-500 rounded-full shadow hover:bg-gray-100 transition duration-300 z-10 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -141,10 +147,10 @@
       </div>
 
 
-
       <div id="carouselViewport" class="overflow-hidden">
-        <div id="carouselTrack" class="flex transition-transform duration-500 gap-5">
-          <div class="carousel-card min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
+        <div id="carouselTrack" class="flex transition-transform duration-500 p-5 -mx-5">
+          <div
+            class="carousel-card min-w-[100%] sm:min-w-[48.5%] md:min-w-[33.33%] lg:min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
             <span
               class="bg-[#ffece5] flex items-center rounded-lg text-orange-500 justify-center h-[2rem] w-[2rem]"><svg
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -157,7 +163,8 @@
               and digital.</p>
           </div>
 
-          <div class="carousel-card min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
+          <div
+            class="carousel-card min-w-[100%] sm:min-w-[48.5%] md:min-w-[33.33%] lg:min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
             <span
               class="bg-[#ffece5] flex items-center rounded-lg text-orange-500 justify-center h-[2rem] w-[2rem]"><svg
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -170,7 +177,8 @@
               and digital.</p>
           </div>
 
-          <div class="carousel-card min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
+          <div
+            class="carousel-card min-w-[100%] sm:min-w-[48.5%] md:min-w-[33.33%] lg:min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
             <span
               class="bg-[#ffece5] flex items-center rounded-lg text-orange-500 justify-center h-[2rem] w-[2rem]"><svg
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -182,7 +190,8 @@
             <p class="text-gray-600 text-[14px]">From marketing strategies and brand development to business consulting
               and digital.</p>
           </div>
-          <div class="carousel-card min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
+          <div
+            class="carousel-card min-w-[100%] sm:min-w-[48.5%] md:min-w-[33.33%] lg:min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
             <span
               class="bg-[#ffece5] flex items-center rounded-lg text-orange-500 justify-center h-[2rem] w-[2rem]"><svg
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -195,7 +204,8 @@
               and digital.</p>
           </div>
 
-          <div class="carousel-card min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
+          <div
+            class="carousel-card min-w-[100%] sm:min-w-[48.5%] md:min-w-[33.33%] lg:min-w-[23.5%] p-[3rem] bg-[#fffffe] rounded-lg shadow-sm hover:shadow-lg transition">
             <span
               class="bg-[#ffece5] flex items-center rounded-lg text-orange-500 justify-center h-[2rem] w-[2rem]"><svg
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -213,14 +223,11 @@
   </main>
 
   <footer
-    class="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between max-w-7xl mx-auto py-16 px-6 xl:px-0">
+    class="flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center justify-between max-w-7xl mx-auto py-16 px-6 xl:px-0">
     <div class="flex items-center gap-5">
-      <a href="#"
-        class="text-decoration-none text-black font-semibold hover:text-orange-500 transition duration-300">Terms</a>
-      <a href="#"
-        class="text-decoration-none text-black font-semibold hover:text-orange-500 transition duration-300">Privacy</a>
-      <a href="#"
-        class="text-decoration-none text-black font-semibold hover:text-orange-500 transition duration-300">Cookies</a>
+      <a href="#" class="text-black font-semibold hover:text-orange-500 transition duration-300">Terms</a>
+      <a href="#" class="text-black font-semibold hover:text-orange-500 transition duration-300">Privacy</a>
+      <a href="#" class="text-black font-semibold hover:text-orange-500 transition duration-300">Cookies</a>
     </div>
     <p class="font-semibold">
       &copy; 2024 By Enative. All Rights Reserved.
